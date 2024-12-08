@@ -1,0 +1,80 @@
+// popup.html
+
+.call-history-list { overflow-y: auto; max-height: 500px; padding: 10px;
+} .call-history-item { display: flex; justify-content: space-between;
+align-items: center; padding: 10px; border-bottom: 1px solid #eee;
+margin-bottom: 5px; } .call-info { flex: 1; } .call-number { font-size:
+16px; font-weight: bold; } .call-details { font-size: 12px; color: #666;
+} .call-actions { display: flex; gap: 10px; } .call-action-btn,
+.block-number-btn { padding: 5px 10px; border: none; border-radius: 4px;
+cursor: pointer; } .no-history { text-align: center; padding: 20px;
+color: #666; }
+
+:::::: {#dialpad-view .view .active}
+::: phone-display
+:::
+
+::: {#dialpad .dialpad}
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+\*
+
+0
+
+\#
+:::
+
+::: call-controls
+📞
+
+📴
+
+🎤
+:::
+::::::
+
+::::: {#autodialer-view .view}
+:::: autodialer-controls
+Start Auto Dial
+
+::: {#dialStatus}
+:::
+::::
+:::::
+
+::::: {#voicedrop-view .view}
+::: voicedrop-controls
+🎤
+
+Record new voicedrop
+:::
+
+::: {#voicedropList .voicedrop-list}
+:::
+:::::
+
+::: nav-bottom
+📞
+
+📑
+
+🎤
+
+⚙️
+:::
